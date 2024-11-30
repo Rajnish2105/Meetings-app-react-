@@ -4,7 +4,7 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import AllMeetUps, { AllMeetupsLoader } from "./Pages/AllMeetUps";
-import NewMeetUps from "./Pages/NewMeetups.jsx";
+import NewMeetUps from "./Pages/NewMeetups";
 import Favorites from "./Pages/Favorites";
 import Layout from "./Components/Layout/Layout";
 import MeetupDetails, {
