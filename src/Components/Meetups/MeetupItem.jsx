@@ -2,11 +2,16 @@ import "./MeetupItem.css";
 import Card from "../UI/Card";
 import { useContext } from "react";
 import FavoriteContext from "../../Context/FavoriteContext";
+import { useNavigate } from "react-router-dom";
 
 export default function MeetupItem({ title, address, description, id, image }) {
   const favoritesCTX = useContext(FavoriteContext);
-
+  const navigate = useNavigate();
   const itemIsFavorite = favoritesCTX.itemIsFavorite(id);
+
+  const handleNavigate = () => {
+    navigate(`/MeetupDetails/${id}`);
+  };
 
   function toggleFavoriteHandler() {
     if (itemIsFavorite) {
@@ -37,6 +42,7 @@ export default function MeetupItem({ title, address, description, id, image }) {
           <button onClick={toggleFavoriteHandler}>
             {itemIsFavorite ? "Remove From Favorites" : "To Favorites"}
           </button>
+          <button onClick={handleNavigate}>Details</button>
         </div>
       </Card>
     </li>

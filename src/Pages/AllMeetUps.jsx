@@ -27,5 +27,6 @@ export async function AllMeetupsLoader() {
       }
       return meetups;
     });
+  console.log("the data", meetups);
   return meetups;
 }

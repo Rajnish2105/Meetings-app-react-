@@ -7,6 +7,9 @@ import AllMeetUps, { AllMeetupsLoader } from "./Pages/AllMeetUps";
 import NewMeetUps from "./Pages/NewMeetups";
 import Favorites from "./Pages/Favorites";
 import Layout from "./Components/Layout/Layout";
+import MeetupDetails, {
+  MeetupDetailsLoader,
+} from "./Components/Meetups/MeetupDetails";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +19,11 @@ const router = createBrowserRouter([
       { path: "/", loader: AllMeetupsLoader, element: <AllMeetUps /> },
       { path: "/new", element: <NewMeetUps /> },
       { path: "/favorites", element: <Favorites /> },
+      {
+        path: "/MeetupDetails/:id",
+        loader: MeetupDetailsLoader,
+        element: <MeetupDetails />,
+      },
     ],
   },
 ]);

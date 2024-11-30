@@ -27,7 +27,15 @@
 
 .MeetupItem-actions {
   padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
   text-align: center;
+}
+
+.MeetupItem-actions a {
+  text-decoration: none;
+  color: #77002e;
 }
 
 .MeetupItem-actions button {
