@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import FavoritesContext from "../Context/FavoriteContext";
-import MeetupList from "../Components/Meetups/MeetupList";
+import FavoritesContext from "@/Context/FavoriteContext";
+import MeetupList from "@/Components/Meetups/MeetupList";
 
 export default function Favorites() {
   const favoritesCTX = useContext(FavoritesContext);

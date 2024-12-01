@@ -3,13 +3,13 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import AllMeetUps, { AllMeetupsLoader } from "./Pages/AllMeetUps";
-import NewMeetUps from "./Pages/NewMeetups";
-import Favorites from "./Pages/Favorites";
-import Layout from "./Components/Layout/Layout";
+import AllMeetUps, { AllMeetupsLoader } from "@/Pages/AllMeetUps";
+import NewMeetUps from "@/Pages/NewMeetups";
+import Favorites from "@/Pages/Favorites";
+import Layout from "@/Components/Layout/Layout";
 import MeetupDetails, {
   MeetupDetailsLoader,
-} from "./Components/Meetups/MeetupDetails";
+} from "@/Components/Meetups/MeetupDetails";
 
 const router = createBrowserRouter([
   {

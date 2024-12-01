@@ -1,7 +1,7 @@
 import "./MeetupItem.css";
-import Card from "../UI/Card";
+import Card from "@/Components/UI/Card";
 import { useContext } from "react";
-import FavoriteContext from "../../Context/FavoriteContext";
+import FavoriteContext from "@/Context/FavoriteContext";
 import { useNavigate } from "react-router-dom";
 
 export default function MeetupItem({ title, address, description, id, image }) {

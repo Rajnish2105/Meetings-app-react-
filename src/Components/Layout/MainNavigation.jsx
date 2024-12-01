@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./MainNavigation.css";
 import { useContext } from "react";
-import FavoritesContext from "../../Context/FavoriteContext";
+import FavoritesContext from "@/Context/FavoriteContext";
 
 export default function MainNavigation() {
   const favoritesCTX = useContext(FavoritesContext);

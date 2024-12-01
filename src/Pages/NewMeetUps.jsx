@@ -1,4 +1,4 @@
-import NewMeetupForm from "../Components/Meetups/NewMeetupForm";
+import NewMeetupForm from "@/Components/Meetups/NewMeetupForm";
 import { useNavigate } from "react-router-dom";
 
 export default function NewMeetUps() {

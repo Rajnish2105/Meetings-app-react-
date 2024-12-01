@@ -2,7 +2,7 @@ import MainNavigation from "./MainNavigation";
 import { Outlet } from "react-router-dom";
 import "./Layout.css";
 
-import { FavoritesContextProvider } from "../../Context/FavoriteContext";
+import { FavoritesContextProvider } from "@/Context/FavoriteContext";
 
 export default function Layout() {
   return (

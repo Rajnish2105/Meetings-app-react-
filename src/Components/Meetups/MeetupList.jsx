@@ -1,4 +1,4 @@
-import MeetupItem from "./MeetupItem";
+import MeetupItem from "@/Components/Meetups/MeetupItem";
 import "./MeetupList.css";
 
 export default function MeetupList({ DUMMY_DATA }) {

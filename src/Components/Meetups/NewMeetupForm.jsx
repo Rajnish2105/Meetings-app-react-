@@ -1,4 +1,4 @@
-import Card from "../UI/Card";
+import Card from "@/Components/UI/Card";
 import { useRef } from "react";
 import "./NewMeetupForm.css";
 

@@ -1,4 +1,4 @@
-import MeetupList from "../Components/Meetups/MeetupList";
+import MeetupList from "@/Components/Meetups/MeetupList";
 import { useLoaderData } from "react-router-dom";
 
 export default function AllMeetUps() {
