@@ -1,4 +1,6 @@
-# [React + Vite](https://meetings-app-react.vercel.app/)
+(https://meetings-app-react.vercel.app/)
+
+# [React + Vite]
 
 This a base version of an app where you can store you meeting details.
 I used React + Vite to create it
