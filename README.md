@@ -1,4 +1,7 @@
-# React + Vite
+# [React + Vite](https://meetings-app-react.vercel.app/)
+
+This a base version of an app where you can store you meeting details.
+I used React + Vite to create it
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
