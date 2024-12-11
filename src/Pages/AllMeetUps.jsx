@@ -17,6 +17,7 @@ export async function AllMeetupsLoader() {
   )
     .then((res) => res.json())
     .then((data) => {
+      console.log("The actual data", data);
       const meetups = [];
       for (const key in data) {
         const meetup = {

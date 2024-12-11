@@ -8,6 +8,10 @@ export default function MeetupDetails() {
     return <p>Loading failed. Please try again.</p>;
   }
 
+  const attendents = meetup.attendees.split(", ").map((name) => name.trim());
+
+  console.log("The attendees", attendents);
+
   return (
     <div className="Meetup-Details-container">
       <img
@@ -16,7 +20,12 @@ export default function MeetupDetails() {
         className="Meetup-Details-image"
       />
       <h1 className="Meetup-Details-title">{meetup.title}</h1>
-      <p className="Meetup-Details-location">{meetup.address}</p>
+      <address className="Meetup-Details-location">{meetup.address}</address>
+      <ul className="Meetup-Details-attendees">
+        {attendents.map((name, i) => {
+          return <li key={i}>{name}</li>;
+        })}
+      </ul>
       <p className="Meetup-Details-description">{meetup.description}</p>
     </div>
   );

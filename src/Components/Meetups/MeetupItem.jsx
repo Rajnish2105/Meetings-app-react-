@@ -36,7 +36,11 @@ export default function MeetupItem({ title, address, description, id, image }) {
         <div className="MeetupItem-content">
           <h3>{title}</h3>
           <address>{address}</address>
-          <p>{description}</p>
+          <p>
+            {description.length > 12
+              ? description.substring(0, 20) + "..."
+              : description}
+          </p>
         </div>
         <div className="MeetupItem-actions">
           <button onClick={toggleFavoriteHandler}>

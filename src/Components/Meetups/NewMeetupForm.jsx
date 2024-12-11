@@ -7,11 +7,13 @@ export default function NewMeetupForm({ addMeetup }) {
   const imageInputRef = useRef();
   const addressInputRef = useRef();
   const descriptionInputRef = useRef();
+  const AttendentInputRef = useRef();
 
   function handleSubmit(e) {
     e.preventDefault();
     const MeetupData = {
       title: titleInputRef.current.value,
+      attendees: AttendentInputRef.current.value,
       description: descriptionInputRef.current.value,
       image: imageInputRef.current.value,
       address: addressInputRef.current.value,
@@ -25,6 +27,10 @@ export default function NewMeetupForm({ addMeetup }) {
         <div className="NewMeetupForm-control">
           <label htmlFor="title">Meetup Title</label>
           <input type="text" id="title" ref={titleInputRef} required />
+        </div>
+        <div className="NewMeetupForm-control">
+          <label htmlFor="attendent">Attendent names seprated by ', '</label>
+          <input type="text" id="attendent" ref={AttendentInputRef} required />
         </div>
         <div className="NewMeetupForm-control">
           <label htmlFor="image">Meetup Image</label>

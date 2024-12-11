@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-
 import AllMeetUps, { AllMeetupsLoader } from "@/Pages/AllMeetUps";
 import NewMeetUps from "@/Pages/NewMeetUps";
 import Favorites from "@/Pages/Favorites";

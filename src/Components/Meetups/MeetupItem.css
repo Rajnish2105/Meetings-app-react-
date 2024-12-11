@@ -13,6 +13,11 @@
 .MeetupItem-image img {
   width: 100%;
   object-fit: cover;
+  transition: all ease-in-out 0.3s;
+}
+
+.MeetupItem-image img:hover {
+  transform: scale(1.1);
 }
 
 .MeetupItem-content {
@@ -23,6 +28,7 @@
 .MeetupItem-content h3 {
   font-size: 1.25rem;
   color: #2c292b;
+  margin-bottom: 0.2rem;
 }
 
 .MeetupItem-actions {
